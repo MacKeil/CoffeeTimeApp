@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF772D05"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ways to make Coffee"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="12dp"
+        android:background="#DC83240D"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:id="@+id/FrenchPress"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="15sp"
+            android:background="#7D1008"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="FrenchPressAction"
+            android:text="@string/FrenchPress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/DripMethod"
+            android:layout_width="match_parent"
+            android:layout_height="77sp"
+            android:layout_marginBottom="15sp"
+            android:background="#7D1008"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="DripMethodAction"
+            android:text="@string/DripMethod"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/Percolator"
+            android:layout_width="match_parent"
+            android:layout_height="77sp"
+            android:layout_gravity="center"
+            android:background="#7D1008"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="PercolatorMethodAction"
+            android:text="@string/Percolator"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
