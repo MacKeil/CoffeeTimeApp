@@ -3,4 +3,10 @@
     <string name="FrenchPress">French Press</string>
     <string name="DripMethod">Drip Method</string>
     <string name="Percolator">Percolator Method</string>
+    <string name="Start">Start</string>
+    <string name="Reset">Reset</string>
+    <string name="DripInfo">The drip method is by far the simplest. You need to grind the coffee
+    into a fine powder. You need to boil the water, but as with all forms of coffee you should make
+    sure that the water is at 195 F (91 C). You will need to take the kettle off the heat for roughly
+    25 seconds to get this temperature. Use the timer below to cool the water.</string>
 </resources>
