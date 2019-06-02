@@ -9,4 +9,16 @@
     into a fine powder. You need to boil the water, but as with all forms of coffee you should make
     sure that the water is at 195 F (91 C). You will need to take the kettle off the heat for roughly
     25 seconds to get this temperature. Use the timer below to cool the water.</string>
+    <string name="FrenchPressInfo1">Making coffee with a french press can easily be the most satisfying
+    ways to make coffee. You must make sure to use a coarse grind. The pieces should still be sizeable.
+    The water you use to steep the coffee will need to be approximately 195 F (91 C). After grinding
+    the coffee place it into the french press so it will be ready to steep. To get the water to the
+    right temperature you will need to hold the kettle off of the heat for roughly 25 seconds. Use
+    the timer provided below to time this out.</string>
+    <string name="FrenchPressInfo2">Now that the water is cool enough to not burn your grind you will
+    need to let the grind steep for approximately 6 minutes. Lucky for you we also provided that timer
+    below. Note: make sure to fold the grind into the water every so often for better flavor!</string>
+    <string name="FrenchPressInfo3">Now you need to put the press on and slowly press down over the
+        course of 30 seconds or so. You guessed it: we provided you with a timer for your success.
+    </string>
 </resources>
