@@ -49,12 +49,23 @@ public class FrenchPressActivity extends AppCompatActivity {
         new CountDownTimer(360000, 1000){
             @Override
             public void onTick(long millisUntilFinished) {
-
+                //find the number of minutes left
+                int minute = (int) millisUntilFinished / 60000;
+                //find the number of seconds left, adjusted for the number of minutes left
+                int second = (int) (millisUntilFinished - (minute * 60000));
+                //format the string before passing it to the view
+                String out = minute  + ":" + second;
+                steep.setText(out);
             }
 
             @Override
             public void onFinish() {
-
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+                    vibe.vibrate(VibrationEffect.createWaveform(pattern1, 0));
+                }
+                else{
+                    vibe.vibrate(pattern1, 0);
+                }
             }
         }.start();
     }
@@ -63,26 +74,34 @@ public class FrenchPressActivity extends AppCompatActivity {
         new CountDownTimer(30000, 1000){
             @Override
             public void onTick(long millisUntilFinished) {
-
+                Press.setText(String.valueOf(millisUntilFinished / 1000));
             }
 
             @Override
             public void onFinish() {
-
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+                    vibe.vibrate(VibrationEffect.createWaveform(pattern1, 0));
+                }
+                else{
+                    vibe.vibrate(pattern1, 0);
+                }
             }
         }.start();
     }
 
     //start the reset events
     protected void resetCoolTimer(View view){
-
+        vibe.cancel();//stop any vibration
+        cool.setText(Integer.toString(25));// reset the clock
     }
 
     protected void resetSteepTimer(View view){
-
+        vibe.cancel();//stop any vibration
+        steep.setText("6:00");//reset the clock
     }
 
     protected void resetPressTimer(View view){
-
+        vibe.cancel(); //stop any vibration
+        Press.setText("30");
     }
 }
