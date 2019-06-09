@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void PercolatorMethodAction(View view){
-        //takes user's click and takes themto the percolator method activity
+        //takes user's click and takes them to the percolator method activity
         Intent intent = new Intent(this, PercolatorMethodActivity.class);
         startActivity(intent);
     }
