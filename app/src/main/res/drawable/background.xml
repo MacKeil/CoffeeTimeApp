@@ -3,6 +3,6 @@
     <item android:drawable="@color/background" />
 
     <item>
-        <bitmap android:src="@drawable/CoffeeTimeLogo" />
+        <bitmap android:src="@drawable/coffee_time_logo" />
     </item>
 </layer-list>
