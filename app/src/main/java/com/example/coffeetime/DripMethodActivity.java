@@ -23,7 +23,7 @@ public class DripMethodActivity extends AppCompatActivity {
         vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
     }
 
-    protected void onResetPress(View view){
+    public void onResetPress(View view){
         vibe.cancel();
         DripTimer.setText(Integer.toString(25));
     }

@@ -26,7 +26,7 @@ public class FrenchPressActivity extends AppCompatActivity {
         vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
     }
 
-    protected void startCoolTimer(View view){
+    public void startCoolTimer(View view){
         new CountDownTimer(25000, 1000){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -45,7 +45,7 @@ public class FrenchPressActivity extends AppCompatActivity {
         }.start();
     }
 
-    protected void startSteepTimer(View view){
+    public void startSteepTimer(View view){
         new CountDownTimer(360000, 1000){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -70,7 +70,7 @@ public class FrenchPressActivity extends AppCompatActivity {
         }.start();
     }
 
-    protected void startPressTimer(View view){
+    public void startPressTimer(View view){
         new CountDownTimer(30000, 1000){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -90,17 +90,17 @@ public class FrenchPressActivity extends AppCompatActivity {
     }
 
     //start the reset events
-    protected void resetCoolTimer(View view){
+    public void resetCoolTimer(View view){
         vibe.cancel();//stop any vibration
         cool.setText(Integer.toString(25));// reset the clock
     }
 
-    protected void resetSteepTimer(View view){
+    public void resetSteepTimer(View view){
         vibe.cancel();//stop any vibration
         steep.setText("6:00");//reset the clock
     }
 
-    protected void resetPressTimer(View view){
+    public void resetPressTimer(View view){
         vibe.cancel(); //stop any vibration
         Press.setText("30");
     }
