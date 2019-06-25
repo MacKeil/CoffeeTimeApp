@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void FrenchPressAction(View view){
         //takes user's click and takes them to next activity
-        AdLoader(view);//init the interstitial ad
+        if(interstitialAd.isLoaded()){
+            interstitialAd.show();
+        }
         Intent intent = new Intent(this, FrenchPressActivity.class);
         startActivity(intent);
     }
