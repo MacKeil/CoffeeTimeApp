@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.coffeetime">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
@@ -20,6 +21,10 @@
         <activity android:name=".DripMethodActivity"/>
         <activity android:name=".FrenchPressActivity"/>
         <activity android:name=".PercolatorMethodActivity"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9055788167131082~1106245768"
+            />
     </application>
 
 </manifest>

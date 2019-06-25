@@ -54,7 +54,7 @@ public class FrenchPressActivity extends AppCompatActivity {
                 //find the number of seconds left, adjusted for the number of minutes left
                 int second = (int) (millisUntilFinished - (minute * 60000));
                 //format the string before passing it to the view
-                String out = minute  + ":" + second;
+                String out = String.format("%s:%d", Integer.toString(minute), Integer.toString(second));
                 steep.setText(out);
             }
 
